@@ -1,0 +1,105 @@
+.sidebar {
+    @apply border-r border-gray-300 h-screen overflow-hidden;
+    @apply fixed left-0 top-0;
+    width: 15rem;
+}
+.main-content {
+    margin-left: 10rem;
+    @apply basis-5/6;
+}
+.main-posts {
+    @apply flex flex-col;
+    overflow-x: hidden;
+    max-width: 470px;
+    min-width: 470px;
+    margin-left: 2.5rem;
+}
+.suggestions {
+    max-width: 319px;
+    min-width: 319px;
+    margin-left: 4rem;
+}
+
+.insta-logo h1 {
+    display: block;
+    margin-left: 0.675rem;
+}
+.insta-logo i {
+    display: none;
+}
+
+.sidebar-link-container {
+    @apply flex flex-col items-start space-y-1;
+}
+.sidebar-link {
+    @apply px-2 py-3;
+}
+.sidebar-link:hover {
+    @apply bg-gray-100 rounded-full;
+}
+.sidebar-link a {
+    @apply text-gray-700 text-xl;
+}
+.sidebar-link span {
+    display: inline;
+}
+
+/* Mobile Nav */
+
+@media screen and (max-width: 1230px) {
+    .sidebar {
+        width: 3.55rem;
+    }
+    .main-content {
+        margin-left: 5rem;
+    }
+    .sidebar-link-container {
+        @apply items-center;
+    }
+    .sidebar-link span {
+        display: none;
+    }
+    .insta-logo h1 {
+        display: none;
+    }
+    .insta-logo i {
+        text-align: center;
+        display: block;
+    }
+    .suggestions {
+        margin-left: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .suggestions {
+        @apply hidden;
+    }
+    .main-posts {
+        min-width: 420px;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .sidebar {
+        @apply hidden;
+    }
+    .main-content {
+        flex-basis: 100%;
+        margin-top: 2.3785rem;
+        margin-left: 0;
+    }
+    .main-posts {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 512px) {
+    
+    .main-posts {
+        min-width: none;
+        flex-basis: 99% !important;
+    }
+}
+

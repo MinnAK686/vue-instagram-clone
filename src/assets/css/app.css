@@ -1,4 +1,11 @@
 @import "main.css";
+@import "./home.css";
+@import "posts.css";
+@import "./mobile.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.container-fluid {
+    @apply w-full h-full;
+}
