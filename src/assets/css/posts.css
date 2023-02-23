@@ -1,0 +1,19 @@
+.posts-container {
+}
+
+.post-images {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.3rem;
+    overflow: hidden;
+}
+
+.post-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.icon-link {
+    @apply text-xl hover:text-gray-500 cursor-pointer;
+}

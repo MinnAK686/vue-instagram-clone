@@ -1,3 +1,45 @@
-.test {
-    @apply text-red-600;
+.my-profile .profile-pic {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.others-profile .profile-pic {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.user-profile .profile-pic {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.stories {
+    width: 3.8rem;
+    height: 3.8rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.stories .profile-pic {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.stories.story {
+    border: 1px solid red;
+    padding: 0.08rem;
+}
+
+.story-container {
+    width: 5rem;
+    height: 5rem;
+    /* margin: 0 0.2rem; */
 }
